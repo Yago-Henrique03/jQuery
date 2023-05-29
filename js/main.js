@@ -6,8 +6,27 @@ $(() => {
     atualizaFrase();
     inputCount();
     startCronom();
+    marcadores();
     $("#restart-game").click(restartGame);
 });
+
+
+function marcadores() {
+    let frase = $(".frase").text();
+    campo.on("input", function () {
+        let digitado = campo.val();
+        let comparavel = frase.substr(0, digitado.length);
+        console.log("Digitado:" + digitado)
+        console.log("Frase C.:" + comparavel)
+        if(digitado == comparavel){
+            campo.addClass("campo-correct")
+            campo.removeClass("campo-wrong")
+        }else {
+            campo.addClass("campo-wrong")
+            campo.removeClass("campo-correct")
+        }
+    });
+}
 
 function atualizaFrase() {
     let frase = $(".frase").text();
@@ -35,6 +54,7 @@ function startCronom() {
             if(reachTimer < 1){
                 campo.attr("disabled", true);
                 clearInterval(cronometroID);
+                campo.toggleClass("campo-disabled");
             }
         }, 1000);
     })
@@ -49,5 +69,9 @@ function restartGame(){
         $("#count-caracteres").text("0");
         $("#timer").text(startTime);
         startCronom()
+        campo.toggleClass("campo-disabled");
+        campo.removeClass("campo-correct");
+        campo.removeClass("campo-wrong");
     })
 }
+

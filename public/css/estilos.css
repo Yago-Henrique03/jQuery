@@ -1,0 +1,26 @@
+.frase {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.campo-input {
+    font-size: 20px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.campo-wrong {
+    border: 2px solid red !important;
+}
+
+.campo-correct {
+    border: 2px solid green !important;
+}
+
+.campo-disabled {
+    background-color: lightgray;
+}
+
+.icons {
+    vertical-align: middle;
+}

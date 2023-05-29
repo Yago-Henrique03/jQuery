@@ -5,23 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura typer</title>
+    <link rel="stylesheet" href="public/css/libs/materialize.min.css">
+    <link rel="stylesheet" href="public/css/libs/google-fonts.css">
+    <link rel="stylesheet" href="public/css/estilos.css">
+
 </head>
 <body>
-    <h1>ALURA TYPER</h1>
-    <p class="frase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis accusantium para teste</p>
+    <div class="container">
+        <h1 class="center">ALURA TYPER</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cum exercitationem officiis ut quis sed blanditiis placeat laborum! Impedit dolore nostrum est voluptas praesentium magni sequi incidunt rerum, mollitia deleniti.</p>
 
-    <ul class="info">
-        <li><span id="tamanho-frase">10</span> palavras</li>
-        <li><span id="timer">10</span> segundos</li>
-    </ul>
+        <ul class="info center">
+            <li>
+                <i class="small material-icons icons">description</i>
+                <span id="tamanho-frase">10</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icons">query_builder</i>
+                <span id="timer">10</span> segundos
+            </li>
+        </ul>
 
-    <textarea class="campo-input" cols="30" rows="10"></textarea>
-    <button id="restart-game">REINICIAR GAME</button>
+        <textarea class="campo-input" cols="30" rows="10"></textarea>
+        <div class="buttons">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="restart-game">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
 
-    <ul>
-        <li><span id="count-caracteres">0</span> caracteres</li>
-        <li><span id="count-palavras">0</span> palavras</li>
-    </ul>
+        <ul class="center">
+            <li><span id="count-caracteres">0</span> caracteres</li>
+            <li><span id="count-palavras">0</span> palavras</li>
+        </ul>
+    </div>
 
     <script src="js/jQuery.js"></script>
     <script src="js/main.js"></script>
