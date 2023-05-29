@@ -95,10 +95,10 @@ function addToPlacar() {
                     "<td>"+ numPalavras + "</td>"+
                     "<td>"+ remove + "</td>"
                 "</tr>";
-    corpoTabela.prepend(linha)
+    corpoTabela.prepend(linha);
 }
 
-$(".button-remover").click((ev) => {
+$(document).on("click", ".button-remover", function (ev) {
     ev.preventDefault();
     $(this).parent().parent().remove();
 })
