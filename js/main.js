@@ -98,7 +98,11 @@ function addToPlacar() {
     corpoTabela.prepend(linha)
 }
 
-$(".button-remover").click((ev) => {
-    ev.preventDefault();
+// $(".button-remover").click((ev) => {
+//     ev.preventDefault();
+//     $(this).parent().parent().remove();
+// })
+
+$(document).on("click", ".button-remover", function () {
     $(this).parent().parent().remove();
 })
