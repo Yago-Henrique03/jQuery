@@ -43,5 +43,5 @@ function removeLinha(){
 }
 
 function mostraPlacar(){
-    $(".placar").slideToggle();
+    $(".placar").stop().slideToggle();
 }
