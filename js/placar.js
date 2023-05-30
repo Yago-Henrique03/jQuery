@@ -11,6 +11,15 @@ function addToPlacar() {
 
 
     corpoTabela.prepend(linha);
+    $(".placar").slideDown(200);
+    scrollPlacar()
+}
+
+function scrollPlacar(){
+    let position = $(".placar").offset().top;
+    $("body").animate({
+        scrollTop: position+"px"
+    }, 1000);
 }
 
 function newRow(usuario, words) {
