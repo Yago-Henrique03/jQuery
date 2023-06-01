@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="POST" id="form-register">
+        <img src="./src/logo.png" alt="logo" class="img">
+        <input type="text" placeholder="INSIRA SEU NOME" id="register-name" required>
+        <input type="email" placeholder="INSIRA SEU E-MAIL" id="register-email" required>
+        <input type="password" placeholder="INSIRA SUA SENHA" id="register-pass" required>
+        <input type="password" placeholder="CONFIRME SUA SENHA" id="register-pass2" required>
+        <button type="submit" id="submit-register">REGISTRAR</button>
+    </form>
+    <form action="POST" id="form-login">
+        <img src="./src/logo.png" alt="logo" class="img">
+        <input type="e-mail" placeholder="E-MAIL" id="login-email" required>
+        <input type="password" placeholder="SENHA" id="login-pass" required>
+        <button type="submit" id="submit-login">ACESSAR CONTA</button>
+    </form>
+
+    <main id="content-control">
+        <header>
+            <i class="ph ph-instagram-logo"></i>
+            <img class="img" src="./src/logo.png" alt="logo">
+            <i class="ph ph-list"></i>
+        </header>
+        <section id="main-content">
+
+        </section>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
